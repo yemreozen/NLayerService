@@ -21,7 +21,11 @@ namespace NLayer.Core.Dtos
         {
             return new CustomResponseDto<T> { StatusCode = statusCode };
         }
-        public static CustomResponseDto<T> Fail(int statusCode, string errors)
+		public static CustomResponseDto<T> Fail(int statusCode, List<string> errors)
+		{
+			return new CustomResponseDto<T> { StatusCode = statusCode, Errors = errors };
+		}
+		public static CustomResponseDto<T> Fail(int statusCode, string errors)
         {
             return new CustomResponseDto<T> { StatusCode = statusCode, Errors = new List<string> { errors } };
         }

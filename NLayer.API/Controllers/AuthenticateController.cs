@@ -12,7 +12,8 @@ namespace JWTWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthenticateController : ControllerBase
+	[AllowAnonymous]
+	public class AuthenticateController : ControllerBase
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
