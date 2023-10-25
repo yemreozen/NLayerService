@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.Dtos
 {
-    public abstract class BaseDto
+    public class ProductWithCategoryDto:ProductDto
     {
-        public int Id { get; set; }
-        public string? CreationDate { get; set; }
+        public CategoryDto Category { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace NLayer.Core.Services
 
         //IEnum ile istediğim classa cast(dönüştürme) yapabilirim.
         Task<IEnumerable<T>> AddRangeAsync(IEnumerable<T> entities);
-
+       
         Task UpdateAsync(T entity);
         Task RemoveAsync(T entity);
         Task RemoveRangeAsync(IEnumerable<T> entites);

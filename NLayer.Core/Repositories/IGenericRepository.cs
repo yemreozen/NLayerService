@@ -7,6 +7,7 @@ namespace NLayer.Core.Repositories
         Task<T>GetByIdAsync(int id);
         IQueryable<T> GetAll();
 
+       
         //Kullanım amacı database herhangi bir sorgu atmadan önce ne yapacağını belirler(örn:orderby ile sıralama) sonrasında database yapacağı işlemi gönderir ve ona göre
         //değer dönderir. Bu sayede sorguyu atıp memorye alıp memoride işlemini yapmaz.
         IQueryable<T> Where(Expression <Func<T,bool>> expression);

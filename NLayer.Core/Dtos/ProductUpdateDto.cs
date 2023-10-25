@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.Dtos
 {
-    public class ProductDto:BaseDto
+    public class ProductUpdateDto
     {
-        public string? Name { get; set; }
+        public int Id { get; set; } 
+        public string? Name { get; set; }    
         public int? Stock { get; set; }
         public decimal? Price { get; set; }
         public string? UpdateDate { get; set; }
         public int? CategoryId { get; set; }
-
     }
 }

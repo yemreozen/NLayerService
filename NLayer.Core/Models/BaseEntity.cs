@@ -9,7 +9,7 @@ namespace NLayer.Core.Models
     public abstract class BaseEntity
     {
         public int Id { get; set; }
-        public DateTime CreationDate { get; set; }
-        public DateTime? UpdateDate { get; set; }
+        public string? CreationDate { get; set; }
+        public string? UpdateDate { get; set; }
     }
 }

@@ -44,7 +44,7 @@ namespace NLayer.Service.Services
         {
             return _repository.GetByIdAsync(id);
         }
-
+       
         public async Task RemoveAsync(T entity)
         {
              _repository.Remove(entity);
@@ -77,5 +77,7 @@ namespace NLayer.Service.Services
             return entities;
 
         }
+
+        
     }
 }

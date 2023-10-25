@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.Models
 {
-    public class Category : BaseEntity
+    public class User
     {
+        public int Id { get; set; } 
+        public string? UserName { get; set; }
+        public string? Password { get; set; }
 
-        public string? Name { get; set; }
-        public ICollection<Product>? Products { get; set; }
     }
 }

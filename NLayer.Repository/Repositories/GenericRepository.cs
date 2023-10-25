@@ -45,6 +45,7 @@ namespace NLayer.Repository.Repositories
             return await _dbSet.FindAsync(id);
         }
 
+  
         public void Remove(T entity)
         {
             _dbSet.Remove(entity);
